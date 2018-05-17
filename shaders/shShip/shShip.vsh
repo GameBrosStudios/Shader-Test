@@ -14,11 +14,14 @@ uniform float myHubX;
 uniform float myHubY;
 uniform float myAngle;
 
+varying float myRad;
+
 //varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 
 void main()
 {
+	myRad = radians(myAngle);
 	//get  inpit position
 	vec4 trans_pos = vec4(in_Position.xyz, 1.0);
 	//vec4 centered_pos = vec4(trans_pos.x - in_HubX, trans_pos.y - in_HubY, trans_pos.z, 1.0);
@@ -32,9 +35,9 @@ void main()
 	
 	//do 2d turn
 	vec4 turned_pos;
-	turned_pos.x = centered_pos.x * cos(myAngle) - centered_pos.y * cos(myAngle);
-	turned_pos.y = centered_pos.x * sin(myAngle) + centered_pos.y * cos(myAngle);
-	turned_pos.z = trans_pos.z;
+	turned_pos.x = centered_pos.x * cos(myRad) - centered_pos.y * cos(myRad);
+	turned_pos.y = centered_pos.x * sin(myRad) + centered_pos.y * cos(myRad);
+	turned_pos.z = centered_pos.z;
 	turned_pos.w = 1.0;
 	
 	//return to original Position
@@ -43,14 +46,15 @@ void main()
 	return_pos.y = turned_pos.y + trans_pos.y;
 	return_pos.z = turned_pos.z + trans_pos.z;
 	return_pos.w = 1.0;	
-	
+	/*
 	//prepare for drawing
 	vec4 drawing_pos;
 	drawing_pos.x = return_pos.x;
 	drawing_pos.y = return_pos.y;
 	drawing_pos.z = return_pos.z;
 	drawing_pos.w = 1.0;	
-	
+	*/
+	vec4 drawing_pos = vec4(return_pos);
 
     gl_Position = gm_Matrices[MATRIX_WORLD_VIEW_PROJECTION] * drawing_pos;
     
