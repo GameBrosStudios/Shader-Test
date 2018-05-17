@@ -10,8 +10,8 @@ attribute float in_HubX;
 attribute float in_HubY;
 attribute float in_Angle;
 
-uniform float myHubX;
-uniform float myHubY;
+//uniform float myHubX;
+//uniform float myHubY;
 uniform float myAngle;
 
 varying float myRad;

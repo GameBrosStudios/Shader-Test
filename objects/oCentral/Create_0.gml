@@ -16,8 +16,6 @@ vertex_begin(vbuff, format);
 	vertex_blade(vbuff);
 vertex_end(vbuff);
 
-
-//u_time = shader_get_uniform(shdGrass, "u_time");
-myHubX = shader_get_uniform(shShip, "myHubX");
-myHubY = shader_get_uniform(shShip, "myHubY");
+//myHubX = shader_get_uniform(shShip, "myHubX");
+//myHubY = shader_get_uniform(shShip, "myHubY");
 myAngle = shader_get_uniform(shShip, "myAngle");
