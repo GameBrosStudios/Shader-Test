@@ -12,6 +12,7 @@ attribute float in_Angle;
 
 uniform float myHubX;
 uniform float myHubY;
+uniform float myAngle;
 
 //varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
@@ -31,16 +32,16 @@ void main()
 	
 	//do 2d turn
 	vec4 turned_pos;
-	turned_pos.x = centered_pos.x * cos(in_Angle) - centered_pos.y * cos(in_Angle);
-	turned_pos.y = centered_pos.x * sin(in_Angle) + centered_pos.y * cos(in_Angle);
+	turned_pos.x = centered_pos.x * cos(myAngle) - centered_pos.y * cos(myAngle);
+	turned_pos.y = centered_pos.x * sin(myAngle) + centered_pos.y * cos(myAngle);
 	turned_pos.z = trans_pos.z;
 	turned_pos.w = 1.0;
 	
 	//return to original Position
 	vec4 return_pos;
-	return_pos.x = centered_pos.x + trans_pos.x;
-	return_pos.y = centered_pos.y + trans_pos.y;
-	return_pos.z = centered_pos.z + trans_pos.z;
+	return_pos.x = turned_pos.x + trans_pos.x;
+	return_pos.y = turned_pos.y + trans_pos.y;
+	return_pos.z = turned_pos.z + trans_pos.z;
 	return_pos.w = 1.0;	
 	
 	//prepare for drawing
