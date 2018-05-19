@@ -13,37 +13,26 @@ var width = argument3;
 var height = argument4;
 var segments = argument5;
 */
-
+randomize()
 var vbuff = argument0;
-var xx = 500
-var yy = 500
-var width = 100
-var height = 100
 
-	var base_alpha = 1
-	var base_color = make_color_hsv(255, 245, 255);
+var i
+for(i = 0; i < 50000; i ++)
+{
+	var base_alpha = 0.75
+	var base_color = make_color_hsv(irandom_range(10,240), irandom_range(10,240), irandom_range(10,240));
 	
-	var x1 = xx
-	var y1 = yy
-	var x2 = xx + 100
-	var y2 = yy;
-	var x3 = xx + 50
-	var y3 = yy + 100
+	var hubX = irandom_range(50, 1500)
+	var hubY = irandom_range(50, 1500)
+	var size = 10
 	
-	var hubX = xx + 50
-	var hubY = yy +50
-/*	
-	var x1 = 100
-	var y1 = 100
-	var x2 = 200
-	var y2 = 100
-	var x3 = 150
-	var y3 = 200
+	var x1 = hubX + size
+	var y1 = hubY - size
+	var x2 = hubX - size
+	var y2 = hubY - size
+	var x3 = hubX
+	var y3 = hubY + size
 	
-	var hubX = 100
-	var hubY = 150
-*/
-//vertex_float1(vbuff, hubX);
 	//t1
 	vertex_position(vbuff, x1, y1);
 	vertex_color(vbuff, base_color, base_alpha);
@@ -63,8 +52,6 @@ var height = 100
 	vertex_float1(vbuff, hubY);
 	vertex_float1(vbuff, point_direction(hubX, hubY, mouse_x, mouse_y));
 
-//}
-
-
+}
 
 
