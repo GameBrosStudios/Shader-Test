@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "df0fc1b8-5873-4879-84ea-5b64f6a80e22",
+            "Value": {
+                "id": "f1af8085-850d-4533-8644-0d917bc20c3d",
+                "resourcePath": "sprites\\sVertexTest\\sVertexTest.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e4c9be0a-6a75-43a8-8079-c21fd074ded3",
             "Value": {
                 "id": "2da48e45-871e-4f81-9e9c-e7eae0271be9",

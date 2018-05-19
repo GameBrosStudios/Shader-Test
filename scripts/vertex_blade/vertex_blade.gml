@@ -16,6 +16,13 @@ var segments = argument5;
 randomize()
 var vbuff = argument0;
 
+var tex = sprite_get_texture(sVertexTest, 0)
+var uvs = texture_get_uvs(tex)
+var uv_left = uvs[0]
+var uv_top = uvs[1]
+var uv_right = uvs[2]
+var uv_bottom = uvs[3]
+
 var i
 for(i = 0; i < 50000; i ++)
 {
@@ -36,18 +43,21 @@ for(i = 0; i < 50000; i ++)
 	//t1
 	vertex_position(vbuff, x1, y1);
 	vertex_color(vbuff, base_color, base_alpha);
+	//vertex_texcoord(vbuff, uv_left, uv_top);
 	vertex_float1(vbuff, hubX);
 	vertex_float1(vbuff, hubY);
 	vertex_float1(vbuff, point_direction(hubX, hubY, mouse_x, mouse_y));
 
 	vertex_position(vbuff, x2, y2);
 	vertex_color(vbuff, base_color, base_alpha);
+	//vertex_texcoord(vbuff, uv_right, uv_top);
 	vertex_float1(vbuff, hubX);
 	vertex_float1(vbuff, hubY);
 	vertex_float1(vbuff, point_direction(hubX, hubY, mouse_x, mouse_y));
 
 	vertex_position(vbuff, x3, y3);
 	vertex_color(vbuff, base_color, base_alpha);
+	//vertex_texcoord(vbuff, uv_left, uv_bottom);
 	vertex_float1(vbuff, hubX);
 	vertex_float1(vbuff, hubY);
 	vertex_float1(vbuff, point_direction(hubX, hubY, mouse_x, mouse_y));
