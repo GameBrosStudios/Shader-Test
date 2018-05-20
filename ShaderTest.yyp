@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "1eaa37ec-6970-4dae-b680-27ff7ffce824",
+            "Value": {
+                "id": "0eb09bc6-56ad-4779-b132-eea953472ac1",
+                "resourcePath": "shaders\\shTest\\shTest.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "26aa85e3-0fa6-447e-8800-faab86e5d959",
             "Value": {
                 "id": "b32732b2-0109-4898-acaf-651734d8212f",
@@ -108,14 +116,6 @@
                 "id": "f0e9e70f-4405-4cd6-a80f-39a912f2dffe",
                 "resourcePath": "views\\7ac4e599-bfda-4fa7-aef3-472ab2a585e3.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "7c7c9df1-a2ac-4f13-a0a6-00083dec2ee9",
-            "Value": {
-                "id": "d1ee1218-6b63-48cb-953b-377453184d60",
-                "resourcePath": "shaders\\shdGrass\\shdGrass.yy",
-                "resourceType": "GMShader"
             }
         },
         {

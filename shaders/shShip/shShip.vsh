@@ -2,16 +2,14 @@
 // Simple passthrough vertex shader
 //
 attribute vec3 in_Position;                  // (x,y,z)
-//attribute vec3 in_HubPos;                    // (x,y,z)
 //attribute vec3 in_Normal;                  // (x,y,z)     unused in this shader.
 attribute vec4 in_Colour;                    // (r,g,b,a)
-//attribute vec2 in_TextureCoord;              // (u,v)
+attribute vec2 in_TextureCoord;              // (u,v)
 attribute float in_HubX;
 attribute float in_HubY;
-attribute float in_Angle;
 
-//uniform float myHubX;
-//uniform float myHubY;
+uniform float myHubX;
+uniform float myHubY;
 uniform float myAngle;
 
 varying float myRad;
