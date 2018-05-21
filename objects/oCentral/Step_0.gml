@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-speed = 5
-direction += 5
+speed += irandom_range(-1,1)
+direction += irandom_range(-1,7)

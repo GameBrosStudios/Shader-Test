@@ -1,6 +1,7 @@
 /// @description create the vertex data
 
-
+speed = 5
+direction = 0
 
 vertex_format_begin();
 	vertex_format_add_position();
