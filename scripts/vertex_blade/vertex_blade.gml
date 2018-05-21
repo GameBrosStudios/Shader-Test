@@ -27,12 +27,15 @@ var i
 for(i = 0; i < 1; i ++)
 {
 	var base_alpha = 0.75
-	var base_color = make_color_hsv(irandom_range(10,240), irandom_range(10,240), irandom_range(10,240));
+	//var base_color = make_color_hsv(irandom_range(10,240), irandom_range(10,240), irandom_range(10,240));
+	var base_color = make_color_hsv(240, 240, 240);
 	
 	var hubX = 0
 	var hubY = 0
 	var size = 50
 	
+//mono
+/*
 	var x1 = size
 	var y1 = -size
 	var x2 = -size
@@ -40,7 +43,64 @@ for(i = 0; i < 1; i ++)
 	var x3 = 0
 	var y3 = size
 	
-	//t1
+	vertex_position(vbuff, x1, y1);
+	vertex_color(vbuff, base_color, base_alpha);
+	vertex_texcoord(vbuff, uv_left, uv_top);
+
+	vertex_position(vbuff, x2, y2);
+	vertex_color(vbuff, base_color, base_alpha);
+	vertex_texcoord(vbuff, uv_right, uv_top);
+
+	vertex_position(vbuff, x3, y3);
+	vertex_color(vbuff, base_color, base_alpha);
+	vertex_texcoord(vbuff, uv_left, uv_bottom);
+*/	
+//triple
+	var x1 = -size
+	var y1 = -size
+	var x2 = 0
+	var y2 = -size/2
+	var x3 = -size
+	var y3 = 0
+	
+	vertex_position(vbuff, x1, y1);
+	vertex_color(vbuff, base_color, base_alpha);
+	vertex_texcoord(vbuff, uv_left, uv_top);
+
+	vertex_position(vbuff, x2, y2);
+	vertex_color(vbuff, base_color, base_alpha);
+	vertex_texcoord(vbuff, uv_right, uv_top);
+
+	vertex_position(vbuff, x3, y3);
+	vertex_color(vbuff, base_color, base_alpha);
+	vertex_texcoord(vbuff, uv_left, uv_bottom);
+	
+	var x1 = -size
+	var y1 = 0
+	var x2 = 0
+	var y2 = size/2
+	var x3 = -size
+	var y3 = size
+	
+	vertex_position(vbuff, x1, y1);
+	vertex_color(vbuff, base_color, base_alpha);
+	vertex_texcoord(vbuff, uv_left, uv_top);
+
+	vertex_position(vbuff, x2, y2);
+	vertex_color(vbuff, base_color, base_alpha);
+	vertex_texcoord(vbuff, uv_right, uv_top);
+
+	vertex_position(vbuff, x3, y3);
+	vertex_color(vbuff, base_color, base_alpha);
+	vertex_texcoord(vbuff, uv_left, uv_bottom);
+	
+	var x1 = 0
+	var y1 = -size/2
+	var x2 = size
+	var y2 = 0
+	var x3 = 0
+	var y3 = size/2
+	
 	vertex_position(vbuff, x1, y1);
 	vertex_color(vbuff, base_color, base_alpha);
 	vertex_texcoord(vbuff, uv_left, uv_top);
