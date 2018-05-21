@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "47624e1b-2332-4b04-b91a-2ab154a01ee0",
+            "Value": {
+                "id": "6f5a79d0-54e3-46f6-b3ec-b8daa501642a",
+                "resourcePath": "objects\\oNPC\\oNPC.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4d012bac-0de1-4553-ab19-aeddaee79bc8",
             "Value": {
                 "id": "e54eee39-459e-4d53-ba74-39641972fa22",
@@ -162,7 +170,7 @@
             "Key": "a616722d-f17f-4a25-a81a-1b0a5b4366df",
             "Value": {
                 "id": "2d4fe30b-bbbd-4b75-8a8b-6f7a0d483a65",
-                "resourcePath": "objects\\oCentral\\oCentral.yy",
+                "resourcePath": "objects\\oPlayer\\oPlayer.yy",
                 "resourceType": "GMObject"
             }
         },
