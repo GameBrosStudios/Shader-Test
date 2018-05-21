@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "9b30be3a-eceb-4d3d-a716-97ae0174d3ed",
+            "Value": {
+                "id": "b139ffac-9a2d-471a-92e8-3323e036ed14",
+                "resourcePath": "objects\\oMapController\\oMapController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9dde6f90-e032-43c9-9235-33894cf4e9db",
             "Value": {
                 "id": "75ebdbde-3611-424e-8154-36649b7d9c89",
