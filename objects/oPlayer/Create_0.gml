@@ -2,6 +2,9 @@
 
 speed = 0
 direction = 0
+myDirX = 0
+myDirY = 0
+friction = 0.5
 
 vertex_format_begin();
 	vertex_format_add_position();

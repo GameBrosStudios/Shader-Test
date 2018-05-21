@@ -29,9 +29,7 @@ for(i = 0; i < 1; i ++)
 	var base_alpha = 0.75
 	//var base_color = make_color_hsv(irandom_range(10,240), irandom_range(10,240), irandom_range(10,240));
 	var base_color = make_color_hsv(240, 240, 240);
-	
-	var hubX = 0
-	var hubY = 0
+
 	var size = 50
 	
 //mono
