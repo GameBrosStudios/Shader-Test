@@ -271,14 +271,6 @@
             }
         },
         {
-            "Key": "ec419bc2-2f6d-4b70-8d15-092b61cb89ce",
-            "Value": {
-                "id": "755cbf5d-178a-4aef-b0c0-99821202c5bf",
-                "resourcePath": "shaders\\shShip\\shShip.yy",
-                "resourceType": "GMShader"
-            }
-        },
-        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "034fb64f-c799-4dd3-9c8d-08bf019eb9e8",
