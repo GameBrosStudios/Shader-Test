@@ -5,7 +5,7 @@ instance_create_layer(irandom_range(50,1000),irandom_range(50,1000),layer,oPlaye
 
 var i
 
-for(i = 1; i <= 100; i++)
+for(i = 1; i <= 1200; i++)
 {
 	instance_create_layer(irandom_range(50,1000),irandom_range(50,1000),layer,oNPC)	
 }

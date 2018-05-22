@@ -2,6 +2,7 @@
 
 speed = 5
 direction = 0
+shootCoolDown = 0
 
 vertex_format_begin();
 	vertex_format_add_position();
